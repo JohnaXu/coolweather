@@ -6,7 +6,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -17,6 +17,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.xlx.coolweather.activity.WeatherActivity">
+
+        </activity>
+
+        <service android:name="com.example.xlx.coolweather.service.AutoUpdateService">
+
+        </service>
+
+        <receiver android:name="com.example.xlx.coolweather.receive.AutoUpdateReceiver">
+
+        </receiver>
+
     </application>
 
 </manifest>
